@@ -1,4 +1,4 @@
-# TS3 Exporter
+# TS3 Exporter 
 ![](https://github.com/hikhvar/ts3exporter/workflows/tests/badge.svg) ![](https://github.com/hikhvar/ts3exporter/workflows/release/badge.svg)
 
 This exporter uses the server query protocol to provide prometheus metrics.
