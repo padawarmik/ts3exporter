@@ -12,7 +12,7 @@ RUN mkdir -p /rootfs/etc && \
     echo "nobody:*:100:100:::" > /rootfs/etc/passwd
 
 
-FROM scratch
+FROM alpine:3.20.1
 
 COPY --from=build --chown=100:100 /rootfs /
 
