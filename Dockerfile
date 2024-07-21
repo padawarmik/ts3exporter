@@ -15,7 +15,7 @@ RUN mkdir -p /rootfs/etc && \
 FROM alpine:3.20.1
 
 COPY --from=build --chown=100:100 /rootfs /
-
+RUN apk add --no-cache wget curl
 USER 100:100
 EXPOSE 9189/tcp
 ENTRYPOINT ["/ts3exporter"]
